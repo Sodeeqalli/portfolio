@@ -449,13 +449,14 @@ nav .fa-solid {
     nav .fa-solid {
         display: block;
         font-size: 25px;
+        margin-left: 5rem;
     }
 
     nav ul {
         background: #8697C4;
         position: absolute;
         top: 0;
-        left: 18rem;
+        left:0;
         right: 0;
         height: 100%;
         text-align: center;

@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     background: #EDE8F5;
     color: #3D52A0;
@@ -16,7 +16,7 @@ body {
 }
 
 .meme img {
-    width: 20rem;
+    width: 10rem;
     height: auto;
     border: 2px solid #333;
 }

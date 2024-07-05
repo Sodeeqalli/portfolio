@@ -16,7 +16,7 @@ body {
 }
 
 .meme img {
-    width: 10rem;
+    width: 20rem;
     height: auto;
     border: 2px solid #333;
 }
@@ -25,4 +25,13 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .meme img {
+        width: 7rem;
+       
+    }
+
 }

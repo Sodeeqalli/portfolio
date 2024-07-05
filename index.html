@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dce74dce7e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/header.png" alt="png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()"> Home </a></li>
+                    <li><a href="#about" onclick="closemenu()"> About </a></li>
+                    <li><a href="#Services" onclick="closemenu()"> Services </a></li>
+                    <li><a href="#portfolio" onclick="closemenu()"> Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()"> Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span> Sodeeq </span> <br> A. Alli from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="image-grid">
+                        <img src="/images/myImage7.jpg" alt="Image 1" class="small-image">
+                        <img src="/images/myImage5.PNG" alt="Image 2" class="small-image">
+                        <img src="/images/myImage4.PNG" alt="Image 3" class="small-image">
+                    </div>
+                    <div class="single-image">
+                        <img src="/images/myImage4.PNG" alt="Image" class="image">
+                    </div>
+                 
+                </div>
+                <div class="about-col-2">
+                   <h1 class="sub-title">About Me</h1> 
+                   <p>
+                    A football fanatic and a dedicated software engineer. I love watching footballers score goals and I try to achieve mine in the Tech world ;) <br>
+                    I thrive on learning new things and I'm hungry to achieve more. Whether it's diving into the latest tech trends or mastering new programming languages, I'm always on the lookout for my next challenge. <br>
+                    Building software is my game, and I play it with a winning mentality. 
+                    Let's connect and make some magic happen!
+                   
+                   </p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>Programming Languages</span><br> Dart, Python, JavaScript<br>
+                            Java, C++, C<br>
+                            Kotlin, HTML, CSS<br>
+                            SQL, PHP
+                        </li>
+                        <li>
+                            <span>Frameworks and tools</span><br> Flutter, Firebase, Linux Kernel<br>
+                            VS Code, Google Sheets, Google Docs<br>
+                            MySql WorkBench, Riverpod 2.0, git
+                            github
+                        </li>
+                        <li>
+                            <span>Programming Paradigm</span><br> Object-Oriented Programming (OOP), Functional Programming, <br>Procedural Programming
+                            Event-Driven Programming, Concurrent Programming
+                        </li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>Jan 2024 - May 2024</span><br> Mobile Application Developer volunteer at Google Developer Students' Club Babcock University
+                        </li>
+                        <li>
+                            <span>Jan 2023 - July 2023</span><br> Intern at Ufitfly Nigeria
+                        </li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>2024</span><br> First-Class Honours, BSc Computer Science from Babcock University Ilishan Nigeria
+                        </li>
+                        <li>
+                            <span>2020</span><br> Secondary School Certificate from Oaksview International College Nigeria
+                        </li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-----services -->
+
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>
+                        Web Development
+                    </h2>
+                    <p>Building responsive and functional websites using modern web technologies.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-alt"></i>
+                    <h2>
+                        Mobile App Development
+                    </h2>
+                    <p>Creating cross-platform mobile applications with Flutter.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>
+                        Python Programming
+                    </h2>
+                    <p>Creating software with python</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/bu_connect.png" alt="">
+                    <div class="layer">
+                       <h3>BU Connect (Research Project)</h3> 
+                        <p>A community-based social networking application for university systems.</p>
+                        <a href="https://github.com/Sodeeqalli/community-based-social-app"> <i class="fa-solid fa-arrow-up-right-from-square fa-shake"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/studystats.png" alt="">
+                    <div class="layer">
+                        <h3>StudyStats (GDSC)</h3> 
+                         <p>An academic progress tracker to help students monitor their performance.</p>
+                         <a href="https://apps.apple.com/ng/app/study-stats-app/id6477740443"> <i class="fa-solid fa-arrow-up-right-from-square fa-shake"></i></a>
+                     </div>
+                </div>
+                <div class="work">
+                    <img src="images/Hospital-Management-System.jpg" alt="">
+                    <div class="layer">
+                        <h3>Hospital Management System</h3> 
+                         <p>A system to manage hospital operations and  records.</p>
+                         <a href="https://github.com/Sodeeqalli/hospital-management-system"> <i class="fa-solid fa-arrow-up-right-from-square fa-shake"></i></a>
+                     </div>
+                </div>
+            </div>
+            
+            <a href="https://github.com/Sodeeqalli" class="btn"> See More</a>
+        </div>
+    </div>
+
+    <!----contact---->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        sodeeqalli@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone "></i>
+                        +2349133683437
+                    </p>
+                    <div class="social-icons">
+                       <a href="https://github.com/Sodeeqalli"><i class="fa-brands fa-github fa-spin"></i></a> 
+                       <a href="https://twitter.com/allisodeeq_"><i class="fa-brands fa-x-twitter fa-flip"></i> </a>
+                       <a href="https://www.instagram.com/sodeeq.alli?igsh=MWR3aDVnYXNucWY3Mw%3D%3D&utm_source=qr"> <i class="fa-brands fa-instagram fa-spin fa-spin-reverse"></i></a>
+                        <a href="https://www.linkedin.com/in/sodeeq-alli"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+                    </div>
+                    <a href="Sodeeq Alli CV.pdf" class="btn btn2"> Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <a href="hire.html" class="btn btn2" id="runawayButton"> Click</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Sodeeq A. Alli</p>
+        </div>
+    </div>
+   
+    <script>
+         const button = document.getElementById('runawayButton');
+        const container = document.querySelector('.contact-right');
+
+        container.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            const buttonRect = button.getBoundingClientRect();
+            const buttonX = buttonRect.left + buttonRect.width / 2;
+            const buttonY = buttonRect.top + buttonRect.height / 2;
+
+            const offsetX = mouseX - buttonX;
+            const offsetY = mouseY - buttonY;
+            const distance = Math.sqrt(offsetX * offsetX + offsetY * offsetY);
+
+            const moveDistance = 100;
+            const moveX = (offsetX / distance) * moveDistance;
+            const moveY = (offsetY / distance) * moveDistance;
+
+            const newX = button.offsetLeft - moveX;
+            const newY = button.offsetTop - moveY;
+
+            // Ensure the button stays within the container
+            const maxX = container.clientWidth - buttonRect.width;
+            const maxY = container.clientHeight - buttonRect.height;
+            const boundedX = Math.min(Math.max(newX, 0), maxX);
+            const boundedY = Math.min(Math.max(newY, 0), maxY);
+
+            button.style.left = `${boundedX}px`;
+            button.style.top = `${boundedY}px`;
+        });
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function openmenu() {
+            document.querySelector("nav ul").style.display = "block";
+        }
+
+        function closemenu() {
+            document.querySelector("nav ul").style.display = "none";
+        }
+
+    </script>
+
+    <script>
